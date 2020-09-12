@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulario de Contacto</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<header id="header">
+	<h1 class="text-center font-italic">formulario de Contacto</h1>
+		<h3 class="text-center">Llena el formulario para poder contáctarnos con usted</h3>
+	</header><!-- /header -->
+	<br>
+	<br>
+	<main class="container">
+
+		<form action="#" method="get" class="container formulario">
+
+		<label for="text" placeholder = "Ingrese su Nombre y Apellido">Nombre y Apellido:</label>
+			<input type="text" id="text" required>
+		
+		<label for="tele" placeholder = "Ingrese su Número de Telefono">Número de Teléfono:</label>
+			<input type="text" id="tele">
+	
+		<label for="correo" placeholder = "Ingrese su E-mail">E-mail:</label>
+			<input type="email" id="correo" required>
+		
+		<label for="pais">Pais de Origen:</label>
+			<select id="pais" class="btn-outline-warning m-lg-auto">
+				<option disabled selected>--Seleccione--</option>
+				<option value="Argentina">Argentina</option>
+				<option value="Bolivia">Bolivia</option>
+				<option value="Brasil">Brasil</option>
+				<option value="Chile">Chile</option>
+				<option value="Colombia">Colombia</option>
+				<option value="Ecuador">Ecuador</option>
+				<option value="Honduras">Honduras</option>
+				<option value="Mexico">México</option>
+				<option value="Nicaragua">Nicaragua</option>
+				<option value="Paraguay">Paraguay</option>
+				<option value="Panama">Panamá</option>
+				<option value="Peru">Perú</option>
+				<option value="Uruguay">Uruguay</option>
+				<option value="Venezuela">Venezuela</option>
+			</select>
+
+		<label for="mensaje">Mensaje:</label>
+			<textarea name="mensaje"></textarea>
+<br>
+		<p class="text-center">¿Cómo Desea ser Contactado?</p>
+	<div class="contacto">
+		<label for="telefono">Teléfono</label>
+		<input type="radio" name="contacto" value="telefono" id="telefono" required>
+
+		<label for="correo">Correo</label>
+		<input type="radio" name="contacto" value="correo" id="correo" required>
+</div>
+<br>
+		<p>Si, eligio Teléfono, Seleccione la fecha y hora:</p>
+	<div class="formu">
+		<label for="fecha">Fecha:</label>
+		<input type="date" id="fecha">
+
+		<label for="hora">Hora:</label>
+		<input type="time" id="hora" min="08:00" max="18:00">
+	</div>
+	<div class="d-flex flex-column">
+		<input type="submit" value="Enviar Datos" class="btn-outline-light boton">
+	  </div>
+	   </form>
+	  
+   </main>
+   <br>
+</body>
+</html>

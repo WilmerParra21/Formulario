@@ -1,0 +1,96 @@
+body{
+	background-image: url('../img/Fondo Abstracto.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+h1{
+	color: darkorange;
+}
+
+h3{
+	color: palevioletred;
+	font-family:'Georgia', serif;
+	font-style: italic;
+}
+
+#header{
+	font-family: Georgia, serif;
+	background-color: black;
+	box-shadow: 0.2rem 0.3rem 0.3rem orange;
+}
+p{
+	color: white;
+	font-size: 1rem;
+}
+
+main{
+	background-color: rgba(1, 1, 1, 0.7);
+	border: 0.2rem solid orange;
+}
+.formulario{
+	max-width: 30rem;
+	align-items: center;
+}
+.formu{
+	display: grid;
+	grid-template-columns: 23% 23% 23% 23%;
+	grid-column-gap: 1.2rem;
+}
+
+label{
+	color: deeppink;
+	font-size: 1.2rem;
+	font-style: italic;
+	font-family: Georgia, serif;
+	margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+input:not([type="submit"]), textarea{
+	margin: 1rem 0.5rem 1rem 0.5rem;
+	padding: 0.2rem;
+	display: block;
+	width: 100%;
+	background-color: lightgray;
+	border: none;
+}
+
+input:[type = "radio"]{
+	width: auto;
+	margin: 0;
+}
+
+select{
+	width: 101%;
+	padding: 0.5rem;
+	background-color: gray;
+	border: none;
+}
+
+select option{
+	background-color: orange;
+	color: white;
+}
+
+textarea{
+	width: 100%;
+}
+
+.contacto{
+	max-width: 30rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.boton{
+	margin: 2rem;
+	padding: 0.5rem 1.8rem;
+	margin-top: 3rem;
+	font-family: 'Lucida sans', sans-serif;
+	font-size: 1.1rem;
+	text-align: center;
+	background-color: deeppink;
+	border: none;
+}
